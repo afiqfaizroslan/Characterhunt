@@ -31,7 +31,7 @@ public class answer : MonoBehaviour
     {
 
         Name.text = AR.transform.GetChild(0).GetComponent<META>().getName() + " :";
-        Unlocked.transform.GetChild(0).GetComponent<Image>().sprite = AR.transform.GetChild(0).GetComponent<META>().getFace();
+        Unlocked.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().sprite = AR.transform.GetChild(0).GetComponent<META>().getFace();
         if (timeremain > 0)
         {
             timeremain -= Time.deltaTime;
@@ -45,7 +45,7 @@ public class answer : MonoBehaviour
     }
     public void greeting()
     {
-        anim = AR.transform.GetChild(0).GetComponent<Animator>();
+        anim = AR.transform.GetChild(0).transform.GetChild(0).GetComponent<Animator>();
         anim.Play(AR.transform.GetChild(0).GetComponent<META>().GetAnimation(1));
         Content.text = "Hi...";
         Answer.SetActive(true);
@@ -111,19 +111,8 @@ public class answer : MonoBehaviour
             {
                 Unlocked.SetActive(true);
                 AR.transform.GetChild(0).GetComponent<META>().Unlocked();
-                StartCoroutine(Unlockview(2));
             }
         }
     }
 
-    IEnumerator Unlockview(float delayTime)
-    {
-        //Wait for the specified delay time before continuing.
-
-        yield return new WaitForSeconds(delayTime);
-        Unlocked.SetActive(false);
-
-
-
-    }
 }

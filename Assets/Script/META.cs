@@ -5,6 +5,9 @@ using UnityEngine;
 public class META : MonoBehaviour
 {
     public string Name;
+    public string ID;
+    public string BgStory;
+    public int Point;
     public Sprite Face;
     public bool unlocked;
     public string[] questions = new string[4];

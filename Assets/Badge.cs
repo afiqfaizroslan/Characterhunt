@@ -16,7 +16,7 @@ public class Badge : MonoBehaviour
         Panel.SetActive(true);
         Icon.GetComponent<Image>().sprite = sprite[0];
         Title.text = "WARRIOR";
-        Content.text = "You have unlocked this by collecting all character from warrior category";
+        Content.text = "Badge unlocked by collecting character from warrior category (Hang tuah)";
     }
 
     public void Royal()
@@ -24,7 +24,7 @@ public class Badge : MonoBehaviour
         Panel.SetActive(true);
         Icon.GetComponent<Image>().sprite = sprite[1];
         Title.text = "ROYAL";
-        Content.text = "You have unlocked this by collecting all character from ROYAL category";
+        Content.text = "Badge unlocked by collecting all character from ROYAL category (Sultan, Puteri Hang li poh)";
     }
 
     public void Legend()
@@ -32,7 +32,7 @@ public class Badge : MonoBehaviour
         Panel.SetActive(true);
         Icon.GetComponent<Image>().sprite = sprite[2];
         Title.text = "LEGENDARY";
-        Content.text = "You have unlocked this by collecting all character from lagend and myth category";
+        Content.text = "Badge unlocked  by collecting all character from lagend and myth category (Hang Tuah, Puteri Gunung Ledang)";
     }
 
     public void Sovereign()
@@ -40,7 +40,7 @@ public class Badge : MonoBehaviour
         Panel.SetActive(true);
         Icon.GetComponent<Image>().sprite = sprite[3];
         Title.text = "SOVEREIGN";
-        Content.text = "You have unlocked this by collecting all character from Colonixer category";
+        Content.text = "Badge unlocked by collecting all character from Colonizer category  (Dutch Army, Portugis Army)";
     }
 
     public void close()

@@ -11,7 +11,7 @@ using UnityEngine.UI;
 public class instantobj : MonoBehaviour
 {
     private Animator anim;
-    public GameObject item;
+    //public GameObject item;
 
     [Geocode]
     Vector2d userLoc;
@@ -23,8 +23,8 @@ public class instantobj : MonoBehaviour
     void Start()
     {
 
-        //Clone = (GameObject)Instantiate(LocationStatus.item, this.transform);
-       Clone = (GameObject)Instantiate(item, this.transform);
+        Clone = (GameObject)Instantiate(LocationStatus.item, this.transform);
+        //Clone = (GameObject)Instantiate(item, this.transform);
         anim = Clone.GetComponent<Animator>();
         
     }

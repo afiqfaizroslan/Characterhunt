@@ -10,10 +10,13 @@ public class PlayFabLogin : MonoBehaviour
 {
     [Header("UI")]
     public Text messageText;
+    public Text PanelText;
     public InputField emailInput;
     public InputField passwordInput;
+    public InputField RecoveryInput;
     public Toggle Remember;
     public GameObject loading;
+    public GameObject Recovery;
     DAO dao = new DAO();
 
     void Start()
@@ -52,15 +55,27 @@ public class PlayFabLogin : MonoBehaviour
 
     }
 
+    public void openRecovery()
+    {
+        Recovery.SetActive(true);
+    }
+    public void CloseRecovery()
+    {
+        Recovery.SetActive(false);
+    }
+
     public void PaswordResetButton()
     {
-        if (emailInput.text == "")
+        if (RecoveryInput.text == "")
         {
-            messageText.text = "enter your email";
+            RecoveryInput.text = "enter your email";
         }
         else 
         {
-            dao.PaswordReset(emailInput.text);
+            dao.PaswordReset(RecoveryInput.text);
+            Recovery.SetActive(false);
+
+            messageText.text = "Recovery email sent";
         }
         
     }

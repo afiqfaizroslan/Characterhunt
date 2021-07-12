@@ -34,7 +34,8 @@ public class SpawnOnMap : MonoBehaviour
 			var instance = Instantiate(_markerPrefab[i]);
 			instance.transform.localPosition = _map.GeoToWorldPosition(_locations[i], true);
 			instance.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
-			instance.transform.position = new Vector3(instance.transform.position.x, 1f, instance.transform.position.z);
+			instance.transform.position = new Vector3(instance.transform.position.x, 0f, instance.transform.position.z);
+			instance.transform.rotation = Quaternion.Euler(0, -Input.compass.trueHeading, 0);
 			_spawnedObjects.Add(instance);
 		}
 	}
@@ -48,7 +49,8 @@ public class SpawnOnMap : MonoBehaviour
 			var location = _locations[i];
 			spawnedObject.transform.localPosition = _map.GeoToWorldPosition(location, true);
 			spawnedObject.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
-			spawnedObject.transform.position = new Vector3(spawnedObject.transform.position.x, 1f, spawnedObject.transform.position.z);
+			spawnedObject.transform.position = new Vector3(spawnedObject.transform.position.x, 0f, spawnedObject.transform.position.z);
+			spawnedObject.transform.rotation = Quaternion.Euler(0,-Input.compass.trueHeading,0);
 		}
 	}
 

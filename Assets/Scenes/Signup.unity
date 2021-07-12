@@ -822,7 +822,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 971879834}
-        m_MethodName: RegisterButton
+        m_MethodName: Register
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1090,6 +1090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b98240dc0ba024e4c91d25be81e09585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Popup: {fileID: 0}
 --- !u!114 &923857043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1306,8 +1307,8 @@ GameObject:
   - component: {fileID: 971879831}
   - component: {fileID: 971879830}
   - component: {fileID: 971879829}
-  - component: {fileID: 971879834}
   - component: {fileID: 971879833}
+  - component: {fileID: 971879834}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1414,6 +1415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b98240dc0ba024e4c91d25be81e09585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Popup: {fileID: 0}
 --- !u!114 &971879834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1423,13 +1425,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 971879828}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6eaaed8e1b833741b1e3757c84055ba, type: 3}
+  m_Script: {fileID: 11500000, guid: c54cdce7674e12f43a61e7f4e2272b95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  messageText: {fileID: 536290692}
-  UnameInput: {fileID: 1612802611}
-  emailInput: {fileID: 1405889978}
-  passwordInput: {fileID: 735173909}
+  messageRegister: {fileID: 536290692}
+  RuNameInput: {fileID: 1612802611}
+  RemailInput: {fileID: 1405889978}
+  RpasswordInput: {fileID: 735173909}
+  nameInput: {fileID: 0}
+  Panel: {fileID: 0}
 --- !u!1 &1126805056
 GameObject:
   m_ObjectHideFlags: 0

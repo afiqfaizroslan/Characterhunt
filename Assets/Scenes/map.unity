@@ -944,12 +944,12 @@ PrefabInstance:
     - target: {fileID: 7931864424245881023, guid: 3c48db94482536c49a7feb31517635de,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9828067
+      value: 0.9887955
       objectReference: {fileID: 0}
     - target: {fileID: 7931864424245881023, guid: 3c48db94482536c49a7feb31517635de,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.18463755
+      value: 0.1492765
       objectReference: {fileID: 0}
     - target: {fileID: 7931864424245881023, guid: 3c48db94482536c49a7feb31517635de,
         type: 3}
@@ -964,7 +964,7 @@ PrefabInstance:
     - target: {fileID: 7931864424245881023, guid: 3c48db94482536c49a7feb31517635de,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 21.28
+      value: 17.17
       objectReference: {fileID: 0}
     - target: {fileID: 7931864424245881023, guid: 3c48db94482536c49a7feb31517635de,
         type: 3}
@@ -978,8 +978,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8045017759959498293, guid: 3c48db94482536c49a7feb31517635de,
         type: 3}
+      propertyPath: m_AspectRatio
+      value: 6.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045017759959498293, guid: 3c48db94482536c49a7feb31517635de,
+        type: 3}
       propertyPath: m_FieldOfView
-      value: 70
+      value: 70.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045017759959498293, guid: 3c48db94482536c49a7feb31517635de,
+        type: 3}
+      propertyPath: m_FarClipPlane
+      value: 9.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c48db94482536c49a7feb31517635de, type: 3}
@@ -2131,11 +2141,13 @@ MonoBehaviour:
   _map: {fileID: 114105500982122791}
   _locationStrings:
   - 3.224649, 101.370062
-  - 3.225276, 101.344122
+  - 3.225963, 101.369501
+  - 3.224163, 101.369206
   _spawnScale: 2
   _markerPrefab:
-  - {fileID: 436108002999800229, guid: 80fdebd8909f5ec4397eff3fa5b80c1e, type: 3}
-  - {fileID: 125390584582199150, guid: 47574e73bcc33f640aad63d3f976c98e, type: 3}
+  - {fileID: 7727186237383764210, guid: 871540f6d3dcccc44934035df04be812, type: 3}
+  - {fileID: 3160043178265473314, guid: 9a2b1015123aa394e9bf13b2ddc03b4f, type: 3}
+  - {fileID: 1641891027348665680, guid: 8db58e03f368818458086ddedf994d4b, type: 3}
 --- !u!114 &1094528993850013
 MonoBehaviour:
   m_ObjectHideFlags: 0
