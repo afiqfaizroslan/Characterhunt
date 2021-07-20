@@ -13,7 +13,7 @@ public class instantobjc : MonoBehaviour
 
         Clone = (GameObject)Instantiate(ShowCharacters.Sent, this.transform);
 
-        anim = Clone.GetComponent<Animator>();
+        anim = Clone.transform.GetChild(0).GetComponent<Animator>();
 
     }
 
@@ -21,4 +21,23 @@ public class instantobjc : MonoBehaviour
     {
         return Clone;
     }
+
+    public void Dance()
+    {
+        anim.Play("Dance");
+    }
+
+    public void Flip()
+    {
+        anim.Play("BackFlip");
+    }
+    public void Kick()
+    {
+        anim.Play("Kick");
+    }
+    public void Greeting()
+    {
+        anim.Play("Greeting");
+    }
+
 }

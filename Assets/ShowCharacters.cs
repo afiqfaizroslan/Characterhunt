@@ -11,36 +11,36 @@ public class ShowCharacters : MonoBehaviour
     public void HT()
     {
         Sent = Characters[0];
-        SceneManager.LoadScene("Characters");
+        SceneManager.LoadScene("Characters", LoadSceneMode.Additive);
     }
 
     public void S()
     {
         Sent = Characters[1];
-        SceneManager.LoadScene("Characters");
+        SceneManager.LoadScene("Characters", LoadSceneMode.Additive);
     }
 
     public void PGL()
     {
         Sent = Characters[2];
-        SceneManager.LoadScene("Characters");
+        SceneManager.LoadScene("Characters", LoadSceneMode.Additive);
     }
 
     public void PHL()
     {
         Sent = Characters[3];
-        SceneManager.LoadScene("Characters");
+        SceneManager.LoadScene("Characters", LoadSceneMode.Additive);
     }
 
     public void DA()
     {
         Sent = Characters[4];
-        SceneManager.LoadScene("Characters");
+        SceneManager.LoadScene("Characters", LoadSceneMode.Additive);
     }
 
     public void PA()
     {
         Sent = Characters[5];
-        SceneManager.LoadScene("Characters");
+        SceneManager.LoadScene("Characters", LoadSceneMode.Additive);
     }
 }
