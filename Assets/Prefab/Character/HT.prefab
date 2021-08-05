@@ -2681,8 +2681,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Hang Tuah
   ID: HT
-  BgStory: 
-  Point: 200
+  BgStory: was a warrior who lived in Malacca during the reign of Sultan Mansur Shah
+    in the 15th century. He was supposedly the most powerful of all the laksamana,
+    or admirals, and is considered by the Malays to be one of history's greatest
+    silat masters. Hang Tuah is held in the highest regard, even in present-day Malay
+    culture, and is arguably the most well-known and illustrious warrior figure in
+    Malay history and literature.
+  Point: 150
   Face: {fileID: 21300000, guid: 925d5f147c5545b41853321ba789e46f, type: 3}
   unlocked: 0
   questions:

@@ -739,31 +739,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Puteri Gunung Ledang
   ID: PGL
-  BgStory: 
+  BgStory: "Puteri Gunung Ledang\u201D. A legend of Gunung Ledang. Some said Gunung
+    Ledang get its name from Javanese people that called this mountain \u201CGunung
+    Ledang\u201D, which means Mountain From a far or farthest mountain. In the Malay
+    legend it is said that The sultan had heard of the princess' beauty and wanted
+    to marry her, but she have rejected Sultan of Melaka proposal by imposing seven
+    conditions which is impossible to fulfilled: 1 golden bridge from Gunung Ledang
+    to Melaka, 1 silver bridge from Melaka to Gunung Ledang, 7 trays of mosquito
+    livers, 7 trays of pest livers, 7 jars of virgin tears , 7 jars of young betel
+    nut water."
   Point: 200
   Face: {fileID: 21300000, guid: 95b018c8c2deb27458a0316f257d888b, type: 3}
   unlocked: 0
   questions:
-  - 
-  - 
-  - 
-  - 
+  - 'Who are you? '
+  - 'What is this place? '
+  - 'How Gunung ledang get Its name? '
+  - 'What is the Popular story of you? '
   answer:
-  - 
-  - 
-  - 
-  - 
+  - "I\u2019am \u201CPuteri Gunung Ledang\u201D. A legend of Gunung Ledang"
+  - 'This is Gunung Ledang. A mountain in Tangkak District, Johor but this Water
+    fall is located in Asahan, Melaka. It is believed during Hang Tuah expedition
+    to the peak of Gunung Ledang he start from this trail. '
+  - "A source said this mountain get its name from Javanese people that called this
+    mountain \u201CGunung Ledang \u201D, which means Mountain From a far or farthest
+    mountain"
+  - 'In the Malay legend it is said that I have rejected Sultan of Melaka proposal
+    by imposing seven conditions which is impossible to fulfilled: 1 golden bridge
+    from Gunung Ledang to Melaka, 1 silver bridge from Melaka to Gunung Ledang, 7
+    trays of mosquito livers, 7 trays of pest livers, 7 jars of virgin tears , 7
+    jars of young betel nut water.'
   anim:
   - Idle
   - Greeting
-  - Greeting
-  - Greeting
-  - Greeting
+  - Talking
+  - Talking
+  - Talking
   CoolDown:
-  - 0
-  - 0
-  - 0
-  - 0
+  - 5
+  - 7
+  - 8
+  - 12
 --- !u!1 &1728835730139149236
 GameObject:
   m_ObjectHideFlags: 0

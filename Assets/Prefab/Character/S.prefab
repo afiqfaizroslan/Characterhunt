@@ -1568,31 +1568,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Sultan
   ID: S
-  BgStory: 
+  BgStory: "Sultan is the Leader of a nation. In Melaka the sultan history starts
+    from Parameswara, also known as Sultan Iskandar Shah (after converted to Islam)
+    in 1400 until 1414. Then, Parameswara son Sultan Megat Iskandar Shah in 1414
+    until 1424. Then, Sultan Muhammad Shah in 1424 until 1444. Then, Sultan \tAbu
+    Syahid Shahin 1444 until 1446. Then, Sultan Muzaffar Shah in 1446 until 1459.
+    Then, Sultan Mansur Shah in 1459 until 1477. Then, Sultan Alauddin Riayat Shahin
+    1477 until 1488. Then, Sultan Mahmud Shah in 1488 until 1511. In 1511 Melaka
+    fall to portugues."
   Point: 200
   Face: {fileID: 21300000, guid: ced932d08f9f4b64abf9c58d8f724e0b, type: 3}
   unlocked: 0
   questions:
-  - 
-  - 
-  - 
-  - 
+  - Who are you?
+  - 'What is this place? '
+  - How is Melaka in its Era?
+  - Why Melaka fall to colonizer?
   answer:
-  - 
-  - 
-  - 
-  - 
+  - "I\u2019m Sultan of Melaka, leader of the nation and leader for nation Religion"
+  - "This is the palace of Melaka or \u201DIstana Melaka\u201D where all the government
+    activity is being done and Where Sultan will be living"
+  - ' Melaka is the substantial port for all traders from around the world because
+    of its strategic location, this era was leaded by Sultan Mansur Shah'
+  - "In 1511 armada from Portugal lead by Alfonso de Albuquerque come to build their
+    Fort in Melaka but Sultan Mahmud Shah resist. Then, Portugal armada Surround
+    Melaka for 10 day and success in capturing Melaka because of the traitor of Melaka
+    \u201DSi Kitol\u201D"
   anim:
   - Idle
   - Greeting
-  - Greeting
-  - Greeting
-  - Greeting
+  - 'Talking '
+  - Talking2
+  - Talking
   CoolDown:
-  - 0
-  - 0
-  - 0
-  - 0
+  - 5
+  - 6
+  - 5
+  - 9
 --- !u!1 &3204417412657194663
 GameObject:
   m_ObjectHideFlags: 0

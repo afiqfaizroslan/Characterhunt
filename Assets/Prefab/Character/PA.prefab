@@ -1591,20 +1591,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 'Portuguese Army '
   ID: PA
-  BgStory: 
-  Point: 200
+  BgStory: Portuguese Army, From Portuguese East Indies. The king of Portugal, Manuel
+    I attracted to the news of Melaka Wealth and sent Diogo Lopes de Sequeira to
+    find and make trade with Melaka. But it is not going well because of the conflict
+    In Goa between Muslim and Christian, Sultan Mahmud was convinced by Muslim Trading
+    community that Portuguese is a grave threat to Melaka. Then,In April 1511 Afonso
+    de Albuquerque set sail to Melaka from Goa with 1200 men and seventeen ships.
+    Then, the Viceroy demanded for permission to build a fortress as a Portuguese
+    trading post near the city. Sultan refuse that demand, then Portuguese and Melaka
+    have a war for 40 days. Unfortunately, Melaka fell to Portuguese on 24 August
+    1511. Portuguese then ruled Melaka for 130 years.
+  Point: 100
   Face: {fileID: 21300000, guid: 0bc04fcfc8adb5847876ba8e92ef9a59, type: 3}
   unlocked: 0
   questions:
-  - 
-  - 
-  - 
-  - 
+  - 'Who are you? '
+  - 'What is this place? '
+  - 'Why Portuguese come to Melaka? '
+  - 'How Portuguese Defeating Melaka? '
   answer:
-  - 
-  - 
-  - 
-  - 
+  - "I\u2019m the Portuguese Army, From Portuguese East Indies"
+  - "This is the Fortress of Melaka or \u201CKota A Famosa\u201D. Built by Portuguese
+    in 1512 then in 1641 Dutch destroy the keep but reinforce the outer wall. However,
+    in 1807 British destroy most of the Fortress. The restored Middelburg Bastion
+    and Porta de Santigo gateway is the only remaining part of fortress that remain
+    today."
+  - 'The king of Portugal, Manuel I attracted to the news of Melaka Wealth and sent
+    Diogo Lopes de Sequeira to find and make trade with melaka. But it is not going
+    well because of the conflict In Goa between Muslim and Christian, Sultan Mahmud
+    was convinced by Muslim Trading community that Portuguese is a grave threat to
+    Melaka. '
+  - In April 1511 Afonso de Albuquerque set sail to Melaka from Goa with 1200 men
+    and seventeen ships. Then, the Viceroy demanded for permission to build a fortress
+    as a Portuguese trading post near the city. Sultan refuse that demand, then Portuguese
+    and melaka have a war for 40 days. Unfortunately, Melaka fell to Portuguese on
+    24 August 1511.
   anim:
   - Idle
   - Greeting
@@ -1612,10 +1633,10 @@ MonoBehaviour:
   - Greeting
   - Greeting
   CoolDown:
-  - 0
-  - 0
-  - 0
-  - 0
+  - 5
+  - 15
+  - 13
+  - 13
 --- !u!1 &3561371176828388450
 GameObject:
   m_ObjectHideFlags: 0

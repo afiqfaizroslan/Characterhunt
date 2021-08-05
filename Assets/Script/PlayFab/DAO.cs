@@ -278,7 +278,7 @@ public class DAO : MonoBehaviour
             {
                 level = "Traveller";
             }
-               else if (Points < 900)
+               else if (Points < 1000)
                     {
                         level = "Tourist";
                     }
@@ -302,7 +302,7 @@ public class DAO : MonoBehaviour
         }
         if (level.Equals("Tourist"))
         {
-            point = 900;
+            point = 1000;
         }
         return point;
     }
@@ -319,6 +319,7 @@ public class DAO : MonoBehaviour
     {
         Debug.Log(" successfully saved");
         UnlockedPanel.SetActive(false);
+        SceneManager.LoadScene("map");
     }
 
     public void GetPoints()
@@ -348,7 +349,8 @@ public class DAO : MonoBehaviour
             else 
             {
                 UnlockedPanel.SetActive(false) ;
-               
+                SceneManager.LoadScene("map");
+
             }
 
         }

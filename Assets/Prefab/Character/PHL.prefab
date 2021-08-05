@@ -483,31 +483,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Puteri Hang li po
   ID: PHL
-  BgStory: 
+  BgStory: "was reputed to be a Chinese princess sent by Ming dynasty in China to
+    be wed to Malaccan Sultan Mansur Shah. Then for this marriage Bukit Cina is gifted
+    by Sultan Mansur Shah to his wife and her follower as their settlement. Then,
+    Hang Li Poh's Well was built by Hang li Poh\u2019s followers in 1459. This well
+    has been the main water source supply for Melaka. Regardless of whether the accounts
+    of Hang Li Po's Chinese royal lineage was accurate or not, she was an early prototype
+    of transculturation and interracial marriage in the history of the Malay archipelago.
+    The cultural and genealogical heritage from her era is unmistakable in the Peranakan
+    culture and descendants found in cities such as Penang and Malacca in present-day
+    Malaysia which is characterized by a unique hybridization of ancient Chinese
+    culture with the local cultures of the Nusantara region."
   Point: 150
   Face: {fileID: 21300000, guid: b2c4e18f549dd9645a20ea9a2146b929, type: 3}
   unlocked: 0
   questions:
-  - 
-  - 
-  - 
-  - 
+  - 'Who are you? '
+  - 'What is this place? '
+  - 'What happen to this place now? '
+  - 'What is the history of Bukit Cina? '
   answer:
-  - 
-  - 
-  - 
-  - 
+  - "I\u2019m a princess and wife to Sultan Mansur Shah. My name is \u201CPuteri
+    Hang li Poh\u201D "
+  - "This is Hang Li Poh's Well or \u201C Perigi Hang Li Poh\u201D. This well was
+    built by Hang  li Poh\u2019s followers in 1459. This well has been the main water
+    source supply for Portuguese in 1511 and Dutch in 1677 while concurring Melaka  "
+  - The solid brick wall has been built by Dutch to protect the well but During British
+    period, they neglected this well. Now the water is not so clean and has become
+    wishing well for visitors.
+  - Bukit Cina is a hill that gifted by Sultan Mansur Shah to his wife and her follower
+    as their settlement. Now this hill has more than 12,000 graves and the oldest
+    dated back to 1622
   anim:
   - Idle
   - Greeting
-  - Greeting
-  - Greeting
-  - Greeting
+  - Talking
+  - Talking
+  - Talking
   CoolDown:
-  - 0
-  - 0
-  - 0
-  - 0
+  - 5
+  - 8
+  - 7
+  - 7
 --- !u!1 &1658297158111053883
 GameObject:
   m_ObjectHideFlags: 0

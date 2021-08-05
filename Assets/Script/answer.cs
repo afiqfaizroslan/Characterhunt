@@ -107,6 +107,7 @@ public class answer : MonoBehaviour
         else
         {
             Answer.SetActive(false);
+            anim.Play(AR.transform.GetChild(0).GetComponent<META>().GetAnimation(0));
             if (!AR.transform.GetChild(0).GetComponent<META>().isUnlocked())
             {
                 Unlocked.SetActive(true);

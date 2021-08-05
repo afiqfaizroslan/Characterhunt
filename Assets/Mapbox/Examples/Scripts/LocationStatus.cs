@@ -16,6 +16,7 @@ public class LocationStatus : MonoBehaviour
 		public Button camera;
 		public AbstractMap Map;
 		public GameObject Items;
+		public GameObject Demo;
 		public GameObject notify;
 
 		[SerializeField]
@@ -92,8 +93,19 @@ public class LocationStatus : MonoBehaviour
 	public void distance( Vector2d Userloc)
 	{
 		Userlocations = Userloc;
-		Itemslocations = Items.GetComponent<SpawnOnMap>().getlocations();
-		GameObject[] prefab = Items.GetComponent<SpawnOnMap>().getPrefab();
+		GameObject[] prefab;
+		string D = PlayerPrefs.GetString("Demo", "Off");
+		if (D.Equals("On"))
+		{
+			Itemslocations = NewLocation(Items.GetComponent<SpawnOnMap>().getlocations());
+			prefab = NewObject(Items.GetComponent<SpawnOnMap>().getPrefab());
+		}
+		else
+		{
+			Itemslocations = Items.GetComponent<SpawnOnMap>().getlocations();
+			prefab = Items.GetComponent<SpawnOnMap>().getPrefab();
+		}
+		
 		List<bool> flagNear = new List<bool>();
 		List<bool> flagReach = new List<bool>();
 		Debug.Log("Loc user : " + string.Format("{0}", Userloc));
@@ -118,7 +130,7 @@ public class LocationStatus : MonoBehaviour
 			}
 			flagNear.Add(flag1);
 
-			if (distance <= 10)
+			if (distance <= 3)
 			{
 				flag2 = true;
 				//camera.interactable = true;
@@ -153,7 +165,7 @@ public class LocationStatus : MonoBehaviour
 			if (flagReach[i])
 			{
 				camera.interactable = true;
-				item = prefab[i];;
+				item = prefab[i];
 				break;
 			}
 			else
@@ -175,6 +187,32 @@ public class LocationStatus : MonoBehaviour
 		AndroidNotificationCenter.SendNotification(notification, "channel_id");
 	}
 
+	private Vector2d[] NewLocation(Vector2d[] current)
+	{
+		Vector2d[] Newloc = new Vector2d[current.Length+1];
+		int i = 0;
+		while( i < current.Length)
+		{
+			Newloc[i] = current[i];
+			i++;
+		}
+		Newloc[i] = Demo.GetComponent<DEMOmap>().getLocation();
+
+		return Newloc;
+	}
+
+	private GameObject[] NewObject(GameObject[] current)
+	{
+		GameObject[] NewObj = new GameObject[current.Length + 1];
+		int i = 0;
+		while(i < current.Length)
+		{
+			NewObj[i] = current[i];
+			i++;
+		}
+		NewObj[i] = Demo.GetComponent<DEMOmap>().getSpawned();
+		return NewObj;
+	}
 
 
 
